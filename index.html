@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      padding: 180px;
+      margin-bottom: 1px;
+      border-radius: 0;
+      
+    }
+    
+    /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+    .row.content {height: 450px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      padding-top: 75px;
+     
+      height: 100%;
+    }
+    .sidenav h1 {
+       font-size: 20px;
+       text-align: center;
+       position: center;
+    }
+    .sidenav img{
+      padding-right: 50px;
+    }
+  
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 1px;
+      }
+      .row.content {height:auto;} 
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-center">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        
+        <img src="images/logo.jpg" alt="" width="200px" height="100px">
+        <li class="active"><a href="#">SAMPLE</a></li>
+        <li><a href="#">TYPOGRAPHY</a></li>
+        <li><a href="#">LAYOUTS</a></li>
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-center">
+        <li class="active"><a href="#">FEATUERS</a></li>
+        <li><a href="#">SUBSCRIBE</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container-fluid text-center">    
+  <div class="row content">
+    
+    <div class="col-sm-8 text-left"> 
+        <h1 >Introducing Refined</h1>
+        <img src="images/tipu.jpg" alt="" height="700px" width="700px"> 
+        <h2>One Stop Solutions</h2>
+      
+    </div>
+    <div class="col-sm-2 sidenav text-center">
+      
+        <img src="images/imagesample-3.jpg" alt=""  height="400px" width="400px" >
+        <h1>Felicity runs a design studio <br> specializing in brand identities, <br> photo styling and art direction.</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
